@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta
+    name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link href="/dist/output.css" rel="stylesheet"/>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <script src="http://cdn.tailwindcss.com"></script> -->
+    <title>Frontend Mentor | Blogr landing page</title>
+  </head>
+  <body>
+    <main>
+      <header class="bg-headerColor md:container px-8 md:mx-auto md:max-w-xl rounded-bl-radius pt-8 ">
+        <nav class="md:px-8 pl-4 font-ubuntu text-whiteText font-semibold pt-8 pb-8">
+
+          <div class="md:flex flex justify-between md:items-center ">
+
+
+            <div class="md:flex md:items-center">
+
+              <img src='/Pictures/logo.svg'/>
+
+              <ul class="md:flex hidden rounded-xl font-overpass  md:transition-none md:items-center md:gap-x-3  md:pl-8  md:static transition-all ease-in duration-500  absolute bg-whiteText md:bg-headerColor text-black md:text-whiteText md:w-auto w-9/12 md:h-0 h-5/6  top-[130px] md:top-0 shadow-2xl md:text-start text-center md:mb-0 mb-8">
+                <li class="hover:underline hover:cursor-pointer md:mt-0 mt-8 ">
+                  <a href="/" class="menuItem">Product
+                  </a>
+                  <img src='/Pictures/icon-arrow-light.svg' class="md:inline px-2 hidden"/>
+                  <img src='/Pictures/icon-arrow-dark.svg' class="inline px-2 md:hidden"/>
+                </li>
+
+                <li class=" hover:underline mt-4 md:mt-0 ">
+                  <a href="/" class="menuItem">Company</a>
+                  <img src='/Pictures/icon-arrow-light.svg' class="md:inline px-2 hidden "/>
+                  <img src='/Pictures/icon-arrow-dark.svg' class="inline px-2 md:hidden"/>
+                </li>
+                <li class="hover:underline mt-6 md:mt-0">
+                  <a href="/" class="menuItem">Connect</a>
+                  <img src='/Pictures/icon-arrow-light.svg' class="md:inline px-2 hidden "/>
+                  <img src='/Pictures/icon-arrow-dark.svg' class="inline px-2 md:hidden"/>
+                </li>
+
+                <div class="md:hidden md:my-0 my-6">
+                  <div class=" bg-white px-8 py-2 text-black pb-4 pt-8 ">
+                    <a href="/" class="hover:underline">Login</a>
+                  </div>
+                  <button class=" px-8 py-2 text-whiteText bg-headerColor rounded-3xl hover:bg-vlightRed hover:text-whiteText">
+                    <a href="" class="">Sign Up
+                    </a>
+                  </button>
+                </div>
+
+
+              </ul>
+            </div>
+
+            <!-- <div class="md:hidden menuIcon " id="burger"> -->
+            <span class="text-4xl md:hidden">
+              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+
+            </span>
+
+            <div class="hidden md:block">
+              <button class=" md:font-ubuntu font-semibold inline md:mr-8">
+                <a href="/" class="hover:underline">Login</a>
+              </button>
+              <button class="bg-white px-8 py-2 text-headerColor rounded-3xl hover:bg-vlightRed hover:text-whiteText">
+                <a href="" class="">Sign Up
+                </a>
+              </button>
+            </div>
+          </div>
+
+
+        </nav>
+
+        <div class="text-center pb-8 font-ubuntu font-semibold ">
+          <p class="pt-8 font-light text-5xl  text-whiteText pb-8  ">
+            A modern publishing platform
+          </p>
+          <p class=" text-whiteText pb-8">Grow and build your audience online</p>
+          <button class="inline mb-8 text-headerColor bg-whiteText px-4 py-2 rounded-3xl hover:bg-lightRed hover:text-whiteText mr-6">
+            <a href="/">Start for free</a>
+          </button>
+          <button class='border-whiteText border-2 px-4 py-2 rounded-full'>
+            <a href="" class=" text-whiteText">Learn more</a>
+          </button>
+        </div>
+
+      </header>
+
+      <section class='md:max-w-xl md:container  md:mx-auto pt-8 pb-8   pl-8 pr-8 md:pr-0'>
+        <h1 class="text-center font-overpass md:text-6xl text-3xl font-light pt-8 pb-8 text-bodyColor">Designed for the future</h1>
+
+        <div class="md:hidden pb-8 max-w-sm mx-auto">
+          <img src='/Pictures/illustration-editor-mobile.svg'/>
+
+        </div>
+
+
+        <div class="md:flex md:pl-8 md:text-start text-center">
+          <div class="md:pl-8 w-full">
+            <h1 class="text-bodyColor font-overpass text-3xl pb-8 pt-8">Introducing an extensible editor</h1>
+            <p class="text-bodyColor pb-8 md:w-4/5 tracking-wider ">Blogr features an exceedingly intuitiveinterface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos and Markdown. Extensbility with plugins and thememes provide easy ways to add functionality or change the looks of a blog.</p>
+
+            <h1 class="text-bodyColor font-overpass text-3xl pb-8 ">Robust content management</h1>
+            <p class="text-bodyColor md:w-4/5 pb-8 tracking-wider">Flexible content mangement enables users move through posts. Increase the useability of your blog by adding customized categories, sectionns, format, or flow. With this functionality, you're in full control.</p>
+          </div>
+
+
+          <div class="md:pl-8 hidden md:flex w-full">
+
+            <img src='/Pictures/illustration-editor-desktop.svg'/>
+
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+
+      <section class='md:max-w-xl md:container  md:mx-auto bg-bodyColor rounded-tr-radius rounded-bl-radius md:mt-8 mt-8 mb-8'>
+        <div
+          class="md:flex ">
+          <!-- items-center -->
+
+          <img src="/Pictures/illustration-phones.svg" class='md:relative md:bottom-32 relative bottom-24 pt-8 '/>
+
+
+          <div class="font-overpass md:pl-8  md:pt-8 relative bottom-24 md:relative md:bottom-0  md:text-start text-center pl-8 pr-8">
+            <h1 class=" text-4xl pt-8 pb-8 text-white tracking-wider  ">State of the Art Infrastructure
+            </h1>
+            <p class="text-white pb-8 md:w-4/5 tracking-wider">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly no matter where your readers are, keeping your site competitive</p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class='md:max-w-xl md:container  md:mx-auto md:py-8'>
+
+
+        <div class="md:flex md:justify-between">
+
+          <div class="hidden md:flex">
+            <img src="../Pictures/illustration-laptop-desktop.svg"/>
+          </div>
+
+          <div class="md:hidden mx-auto md:mx-auto">
+            <img src="../Pictures/illustration-laptop-mobile.svg"/>
+          </div>
+
+
+          <div class="w-full font-overpass md:pl-8 md:text-start text-center pl-8 pr-8">
+            <h1 class='text-4xl pt-8 pb-8 text-bodyColor'>Free, open, simple</h1>
+            <p class="md:w-4/6 text-center md:text-start pl-8 pr-8 md:pr-0 md:pl-0">Blogr is  a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting,RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytica. The architect is clean and is relatively easy to learn</p>
+
+            <h1 class='text-4xl pt-8 pb-8 text-bodyColor'>Powerful tooling</h1>
+            <p class="md:w-4/6 text-center md:text-start pl-8 pr-8 md:pr-0 md:pl-0 pb-8">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze but capapble of producing even the most complicated sites</p>
+          </div>
+
+
+        </section>
+
+        <footer class='max-w-xl container  mx-auto bg-footerColor md:p-8 pt-8 mt-8 font-overpass rounded-tr-radius  '>
+          <div class="grid px-8 text-center  md:grid-cols-4 md:text-start">
+            <div class="pb-8 ">
+              <img src="/Pictures/logo.svg " class="mx-auto"/>
+            </div>
+            <div class="pb-8 ">
+              <h1 class="font-light pb-6  text-whiteText">Product</h1>
+              <ul class="text-footerText ">
+                <li class="pb-2">
+                  <a href="/">Overview</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/">Pricing</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/">Marketplace</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/">Features</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/">Integrations</a>
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <h1 class='font-light pb-8  text-whiteText'>Company</h1>
+              <ul class="text-footerText">
+                <li class="pb-2">
+                  <a href="/">About</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/">Team</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/">Blog</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/">Careers</a>
+                </li>
+
+              </ul>
+
+            </div>
+            <div>
+              <h1 class="font-light pb-8 text-whiteText pt-8 md:pt-0">Connect</h1>
+              <ul class="text-footerText">
+                <li class="pb-2">
+                  <a href="/">Contact</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/">Newletter</a>
+                </li>
+                <li class="pb-2">
+                  <a href="/">LinkedIn</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+
+        </footer>
+
+
+      </main>
+
+      <div class="attribution">Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+        Coded by
+        <a href="#">Stephanie Udemezue</a>
+      </div>
+      <script src="index.js"></script>
+
+    </body>
+  </body>
+</html></body></html>
